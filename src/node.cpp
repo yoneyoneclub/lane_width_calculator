@@ -222,12 +222,12 @@ bool CalculatorNode::vehicleIsInsideLane()
     const auto left_offset = offset_pair[0];
     const auto right_offset = offset_pair[1];
     if (left_offset > 0.0) {
-      std::cout << "vehicle is outside of lane" << std::endl;
-      std::cout << "left offset of " << pose_pair.first << " is " << left_offset  << " [m] overed"<< std::endl;
+      // std::cout << "vehicle is outside of lane" << std::endl;
+      // std::cout << "left offset of " << pose_pair.first << " is " << left_offset  << " [m] overed"<< std::endl;
       return false;
     }else if(right_offset < 0.0){
-      std::cout << "vehicle is outside of lane" << std::endl;
-      std::cout << "right offset of " << pose_pair.first << " is " << std::abs(right_offset)  << " [m] overed"<< std::endl;
+      // std::cout << "vehicle is outside of lane" << std::endl;
+      // std::cout << "right offset of " << pose_pair.first << " is " << std::abs(right_offset)  << " [m] overed"<< std::endl;
       return false;
     }
   }
